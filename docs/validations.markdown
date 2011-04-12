@@ -53,6 +53,9 @@ Triggers that generate validator creation:
   # implicitly creates a validates_present
   :required => true  # cannot be nil
 
+  # implicitly creates a validates_uniqueness
+  :unique => true # must be unique
+
   # implicitly creates a validates_length
   :length => 0..20  # must be between 0 and 20 characters in length
   :length => 1..20  # must be between 1 and 20 characters in length
